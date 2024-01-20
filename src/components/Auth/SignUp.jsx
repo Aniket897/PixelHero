@@ -54,7 +54,7 @@ const SignUp = () => {
                 disabled={loading}
                 type='submit'
                 className='bg-[#00AB6B] text-white p-3 rounded-md w-full mt-4'>
-                {loading ? <ButtonLoading /> : "SignIn"}
+                {loading ? <ButtonLoading /> : "SignUp"}
             </button>
         </form>
     )

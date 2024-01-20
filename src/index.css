@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: main;
+    src: url('/fonts/font.ttf');
+}
+
+
+* {
+    font-family: main;
+}
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+.glass {
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.125);
+}
+
+
+.outlineBtn {
+    @apply py-1 px-3 rounded-md duration-500 hover:bg-[#8080803d]
+}
+
+.primaryBtn {
+    @apply py-1 px-3 rounded-md duration-500 border border-white hover:bg-white hover:text-black
+}
